@@ -1,48 +1,24 @@
 <template>
   <div id="app">
-    <div v-if="!mobile">
-        <!-- <keep-alive> -->
         <router-view/>
-        <!-- </keep-alive> -->
-        <this-foot></this-foot>
-    </div>
-   
-   <div v-if="mobile" class="check-mobile">
-    <div class="mask">
-      <div class="mask-content" >
-        <div class="xy-mid  text">
-            请用电脑浏览器打开网址
-            <br>
-            <!-- <span @click="close" class="btn">知道了</span> -->
-        </div>
-      </div>
-    </div>
-  </div>
   </div>
 </template>
 <script>
 
-import thisFoot from './components/base/myfoot'
+
 
 
 export default {
-  components:{thisFoot},
+  components:{},
   data(){
     return{
-      mobile:false
     }
   },
   methods:{
-    close(){
-      
-    }
+   
   },
   created(){
-      if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
-           this.mobile  = true
-      }else{
-                     
-      }
+    
   }
 }
 </script>
@@ -69,6 +45,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-weight: inherit;
+ 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -76,7 +54,8 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1;
+   width: 100%;
+   overflow-x: hidden;
 }
 ol, ul {
   list-style: none;
@@ -102,10 +81,10 @@ a {
 }
 /*自定义全局样式*/
 body {
-  background: #f7f7f7;
-  font-family:"Microsoft YaHei","PingFangSC-Regular","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","WenQuanYi Micro Hei",sans-serif;
-  font-size: 14px;
-  color: #444;
+  background: #fff;
+  font-size: 18px;
+  color: #000;
+  font-weight: 100;
 }
 [ellipsis]{
     overflow:hidden;
@@ -275,36 +254,49 @@ img,i{
       -ms-overflow-style: none;
       overflow: auto;
   }
-  
+
+
 
   
-</style>
-<style lang=scss>
-  .check-mobile{
-    z-index: 10;
-    .mask{
-      background-color: #fff;
-      .mask-content{
-        top: 30%;
-      }
-      .text{
-        width: 100vw;
-        height: 50px;
+  .w100c{margin: 0 auto;width: 1000px;text-align: center;}
+ /* .devide-line{
+    position: absolute;
+    width: 100vw;
+    height: 0.5px;
+    background-color: #d8d8d8;
+  }
+  .devide-line-top{
+    top: 0;
+  }
+  .devide-line-btm{
+    bottom: 0;
+  }*/
 
-      }
-      .btn{
-        display: inline-block;
-        width: 100px;
-        height: 30px;
-        background-color: rgba(97,149,255,1);
-        line-height: 30px;
-        color: #fff;
-        font-size: 14px;
-        margin-top: 80px;
-      }
-      .btn:hover{
-        background-color: rgba(97,149,255,0.65);
-      }
+  .mobile-yes{
+    display: none;
+  }
+  a{
+    color:#3CBAC6;
+    text-decoration:underline;
+  }
+  
+  @media screen and (max-width: 720px){
+    html,body,.w100c{
+      width: 100vw;
+      overflow-x: hidden;
+      font-size: 14px;
+    }
+    .w100c{
+      padding: 0 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .mobile-yes{
+      display: block;
+    }
+    .mobile-no{
+      display: none;
     }
   }
 </style>
+

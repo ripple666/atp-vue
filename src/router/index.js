@@ -2,11 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import layOut from '@/pages/lay-out'
 import index from '@/pages/index'
-import meeting from '@/pages/meeting'
-import create from '@/pages/meeting/create'
-import upload from '@/pages/meeting/upload'
-import wxlogin from '@/pages/wxlogin'
-import mobile from '@/pages/mobile'
+import cn from '@/pages/cn'
 
 
 
@@ -18,52 +14,25 @@ export default new Router({
   	{
   		path:'/',
   		component:layOut,
-  		redirect: '/person',
+  		redirect: '/index',
   		children:[
-  				{
-			        path: '/person',
-			        component: index,
-			        meta:{
-			      	    title:'ppt小助手'
-			        }
-			    },
-			    {
-					path: '/meeting',
-					component:meeting,
-					meta:{
-				  		title:'ppt小助手'
-				  	}
-				},
-			    {
-					path: '/meeting/create',
-					component:create,
-					meta:{
-				  		title:'ppt小助手'
-				  	}
-				},
-				{
-					path: '/meeting/upload',
-					component: upload,
-					meta:{
-				  		title:'ppt小助手'
-				  	}
-				}
+			  {
+		        path: '/index',
+		        component: index,
+		        meta:{
+		      	    title:'Decentralized Token-based Marketing Protocol'
+		        }
+		    },
+        {
+            path: '/cn',
+            component: cn,
+            meta:{
+                title:'去中心化数字营销协议'
+            }
+        }
   		]
-  	},
-	{
-		path: '/wxlogin',
-		component:wxlogin,
-		meta:{
-	  		title:'ppt小助手'
-	  	}
-	},
-	{
-		path: '/mobile',
-		component:mobile,
-		meta:{
-	  		title:'ppt小助手'
-	  	}
-	}
+  	}
   ]
 })
+
 

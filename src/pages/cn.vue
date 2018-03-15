@@ -1,19 +1,18 @@
 <template>
-	<div id="en">
-		<protocol :en="true"></protocol>
-		<atp :isMobile="isMobile"  :en="true"></atp>
-		<chain :en="true"></chain>
-		<campaign :mobile="isMobile" :campaignPosition="campaignPosition" :en="true"></campaign>
-		<team :en="true"></team>
-		<advisors :en="true"></advisors>
-		<partner :en="true"></partner>
-		<my-foot :en="true"></my-foot>
+	<div id="cn">
+		<protocol :en="false"></protocol>
+		<atp :en="false" :isMobile="isMobile"></atp>
+		<chain :en="false"></chain>
+		<campaign :mobile="isMobile" :campaignPosition="campaignPosition" :en="false"></campaign>
+		<team :en="false"></team>
+		<advisors :en="false"></advisors>
+		<partner :en="false"></partner>
+		<my-foot :en="false"></my-foot>
 	</div>
 </template>
 <script>
 import $ from 'jquery'
 import {validate} from '@/assets/js/validate' //注意路径
-
 
 
 import protocol from '@/components/protocol'
@@ -28,25 +27,23 @@ export	default{
 	components:{
 		team,chain,advisors,partner,myFoot,atp,protocol,campaign
 	},
-	data(){
+	data (){
 		return {
 			isMobile:false,
 			campaignPosition:'0px'
 		}
 	},
 	created(){
-		validate.index_cn_init(this)
-	},
-	mounted(){
-		// setTimeout(()=>{
-		// 	window.scrollTo(0,2000)
-		// },200)
+		validate.index_cn_init(this) //监听页面是否滚动
 	}
 }
 </script>
 <style scope>
-	#en{
-	  font-family: Roboto,'Helvetica Neue',Helvetica,arial,sans-serif;
-	  font-weight: 100;
-	}	
+	#cn {
+	    font-family: "Open Sans",'Helvetica Neue',Helvetica,arial,sans-serif;
+	}
+	#cn .nav-cn{
+		font-family:Roboto;
+	}
+
 </style>

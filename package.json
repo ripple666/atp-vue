@@ -1,5 +1,5 @@
 {
-  "name": "pptplus",
+  "name": "atp",
   "version": "1.0.0",
   "description": "ppt",
   "author": "ripple",
@@ -12,11 +12,12 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "axios": "^0.17.1",
-    "v-distpicker": "^1.0.14",
+    "fs": "0.0.1-security",
+    "jquery": "^3.3.1",
+    "velocity": "^0.7.2",
+    "velocity-animate": "^1.5.1",
     "vue": "^2.5.2",
-    "vue-datepicker-local": "^1.0.9",
-    "vue-router": "^3.0.1",
-    "vue2-timepicker": "^0.1.4"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
