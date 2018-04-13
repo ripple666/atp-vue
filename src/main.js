@@ -9,15 +9,6 @@ import 'animate.css'
 
 Vue.config.productionTip = false //关闭生产模式下给出的提示
 
-
-Vue.directive('mounton', {  //自定义指令
-  inserted: function (el) {  // 当被绑定的元素插入到 DOM 中时……
-   
-  }
-})
-
-
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,

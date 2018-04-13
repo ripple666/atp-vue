@@ -30,7 +30,7 @@
 				team:[
 
 					{
-						headImgUrl:require('../assets/images/team-liutiefeng.png'),
+						headImgUrl:require('../../assets/images/team-liutiefeng.png'),
 						name:'Tiefeng Liu',
 						title:'Founder & CEO',
 						intro:['Founder and former CEO of Dolphin Browser, which has over 200 million global users.',
@@ -40,7 +40,7 @@
                                'Member of W3C Global Standardization Committee.']
 					},
 					{
-						headImgUrl:require('../assets/images/team-liuduran.png'),
+						headImgUrl:require('../../assets/images/team-liuduran.png'),
 						name:'Duran Liu',
 						title:'Co-founder & CTO',
 						intro:['Director of the Nebulas Labs.',
@@ -50,7 +50,7 @@
                                'Rich experience in Internet and blockchain technology development.']
 					},
 					{
-						headImgUrl:require('../assets/images/team-liuleiyu.png'),
+						headImgUrl:require('../../assets/images/team-liuleiyu.png'),
 						name:'Leiyu Liu',
 						title:'Co-founder & VP of Operation',
 						intro:['Former Manager of Dolphin Browser commercialization project, experienced in data monetization and user-base 	growing. ',
@@ -60,7 +60,7 @@
 							]
 					},
 					{
-						headImgUrl:require('../assets/images/team-tongjin.png'),
+						headImgUrl:require('../../assets/images/team-tongjin.png'),
 						name:'Jin Tong',
 						title:'Partner & Senior Product Managing Director',
 							intro:['Former Senior Product Managing Director of Dolphin Browser, overseeing product design and operation that serves over hundreds of millions of customers.',
@@ -70,7 +70,7 @@
 						]
 					},
 					{
-						headImgUrl:require('../assets/images/team-jiangming.png'),
+						headImgUrl:require('../../assets/images/team-jiangming.png'),
 						name:'Ming Jiang',
 						title:'Senior Director of Engineering',
 						intro:['Former R&D Director of Dolphin Browser, overseeing product structure design and operation.',
@@ -87,7 +87,7 @@
 			if(!this.en){
 				this.team = [
 					{
-						headImgUrl:require('../assets/images/team-liutiefeng.png'),
+						headImgUrl:require('../../assets/images/team-liutiefeng.png'),
 						name:'刘铁锋',
 						title:'创始人、CEO',
 						intro:['前海豚浏览器创始人兼CEO，其带领团队开发的海豚浏览器超过全球2亿用户的下载。',
@@ -97,7 +97,7 @@
                                '全球W3C标准化委员会成员。']
 					},
 					{
-						headImgUrl:require('../assets/images/team-liuduran.png'),
+						headImgUrl:require('../../assets/images/team-liuduran.png'),
 						name:'刘杜然',
 						title:'联合创始人、CTO',
 						intro:['星云实验室负责人。',
@@ -107,7 +107,7 @@
                                '有丰富的互联网产品开发和区块链项目经验。']
 					},
 					{
-						headImgUrl:require('../assets/images/team-liuleiyu.png'),
+						headImgUrl:require('../../assets/images/team-liuleiyu.png'),
 						name:'刘雷雨',
 						title:'联合创始人、运营副总',
 						intro:['前海豚浏览器商业化负责人、高级运营总监，负责流量变现和用户获取。',
@@ -117,7 +117,7 @@
 							]
 					},
 					{
-						headImgUrl:require('../assets/images/team-tongjin.png'),
+						headImgUrl:require('../../assets/images/team-tongjin.png'),
 						name:'童锦',
 						title:'合伙人、高级产品总监',
 							intro:['前海豚浏览器高级产品总监，所负责的产品用户过亿。',
@@ -127,7 +127,7 @@
 						]
 					},
 					{
-						headImgUrl:require('../assets/images/team-jiangming.png'),
+						headImgUrl:require('../../assets/images/team-jiangming.png'),
 						name:'江铭',
 						title:'高级技术总监',
 						intro:['前海豚浏览器研发总监，负责海豚浏览器各主要产品的架构设计和运维。',

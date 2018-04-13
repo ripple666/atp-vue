@@ -14,10 +14,10 @@ export default new Router({
   	{
   		path:'/',
   		component:layOut,
-  		redirect: '/index',
+  		redirect: '/en',
   		children:[
 			  {
-		        path: '/index',
+		        path: '/en',
 		        component: index,
 		        meta:{
 		      	    title:'Decentralized Token-based Marketing Protocol'

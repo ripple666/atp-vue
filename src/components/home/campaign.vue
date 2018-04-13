@@ -11,20 +11,16 @@
 						 	</div>
 							<!-- advertise -->
 						 	<div  class="advertises-content"   @click="advertise">	
-								<img class="advertises-img" src="../assets/images/adv.png" alt="">
+								<img class="advertises-img" src="../../assets/images/adv.png" alt="">
 								<transition
 									    v-on:leave="advertisesLeave"
 									 >
 									<div class="advertises-content-text"   id="ad-cont" v-if="isShwoAdBox" >
 										<span @click="advertise">{{adText}}</span>
-										<!-- <transition
-										    v-on:leave="leaveFinger"
-										 > -->
-											<i v-show="isShowFinger" class="icon-bg finger" ></i>
-										<!-- </transition> -->
+										<i v-show="isShowFinger" class="icon-bg finger" ></i>
 									</div>
 								</transition>	
-								<img class="retry" v-if="isRetry" style=""  src="../assets/images/retry.svg" alt="">
+								<img class="retry" v-if="isRetry" style=""  src="../../assets/images/retry.svg" alt="">
 								<span  class="advertises-content-text change-text" style="z-index:1000;color: #8c8c8c;" v-show="isPubText&&!isShowMidMatch&&!isMatch">{{publisText}}</span>
 								<img class="enter" id="ad-6"  :src="adImgs[1]" v-show="isMatch&&!isRetry" alt="">
 								<img class="enter" id="ad-5"  :src="adImgs[2]" v-show="isMatch&&!isRetry" alt="">
@@ -39,26 +35,17 @@
 							<div class="mobile-yes contract-text">	
 								<i  class="circle " style="background-color:#3CBAC6; margin-right:9px"></i>
 						 		<span>{{en?'Publishers':'推广者'}}</span>
-						 	</div>	
-
+						 	</div>
 								<div class="contract-content" >	
-									<img  class="contract-img" src="../assets/images/pub.png" alt="">
+									<img  class="contract-img" src="../../assets/images/pub.png" alt="">
 									<span style="" v-show="!isShowMidMatch&&!isMatch">{{publisText}}</span>
 							 	</div>
-
 								<img class="enter" id="pub-6"  :src="pubImgs[1]" v-show="isMatch" alt="">
 								<img class="enter" id="pub-5"  :src="pubImgs[4]" v-show="isMatch" alt="">
 								<img class="enter" id="pub-4"  :src="pubImgs[5]" v-show="isMatch" alt="">
 								<img class="enter" id="pub-3"  :src="pubImgs[2]" v-show="isMatch" alt="">
 								<img class="enter" id="pub-2"  :src="pubImgs[3]" v-show="isMatch" alt="">
 								<img class="enter" id="pub-1"  :src="pubImgs[4]" v-show="isMatch" alt="">
-							 <!-- 	<transition 
-									 v-on:enter="pubEnter"
-									>
-									<img class="enter"  :src="pubImgs[pubRandomNum]" v-show="isShowMidMatch&&isMatch" alt="">
-								</transition> -->
-							 	<!-- <div v-if="!isShwPubBox" class="contract-content"></div> -->
-						 
 							<div  class="mobile-no contract-text">	
 								<i  class="circle" style="background-color:#3CBAC6; margin-right:9px"></i>
 						 		<span>{{en?'Publishers':'推广者'}}</span>
@@ -83,10 +70,6 @@
 						  >
 							<span  v-if="isShowLin3" class="line line3"></span>
 						</transition>
-						<!-- 
-						<i class="icon-bg circle">
-							<img :class="{rotate:isRotate}" src="../assets/images/match point.png" alt="">
-						</i> -->
 						<i class="icon-bg circle">
 							<transition 
 								  v-on:enter="matchEnter"
@@ -117,7 +100,7 @@
 					</div>
 				</div>
 				<div class="third">
-					<img  class="img-bg" id="ad-img-bg"  style="width:526px;height:300px;" src="../assets/images/user.png" alt="">
+					<img  class="img-bg" id="ad-img-bg"  style="width:526px;height:300px;" src="../../assets/images/user.png" alt="">
 					<div class="ad-img-content"  >
 						<transition
 							   v-on:enter="showAdImg"
@@ -176,54 +159,49 @@ export default{
 			isRotate:false,
 			ishowMatchStep:true,
 			isShowAdImg:false,
-			adImgUrl:require('../assets/images/ad-01.svg'),
+			adImgUrl:require('../../assets/images/ad-01.svg'),
 			publisText:'Waiting for Ad…',
 			tx_id:'979143c9d3138f6f703792c129f1b7edde21ce2fbf92be1f6840ba0c82eb3746',
 			contract_add:"e697a66efb237211d574bc964047c9d06ae221022b6c3fe0",
 			pic_url:'https://mobo-bkc.s3-ap-southeast-1.amazonaws.com/atlasp/file/ad-01.svg',
 			githubHref:'#',
 			imgs:[
-				require('../assets/images/matching.svg'),
-				require('../assets/images/analysis.svg'),
-				require('../assets/images/conversion.svg'),
-				require('../assets/images/payment.svg'),
-				require('../assets/images/tracking.svg'),
-				require('../assets/images/matching.svg'),
-			],
-			publishImgs:[
-				require('../assets/images/matching.svg'),
-				require('../assets/images/analysis.svg'),
-				require('../assets/images/conversion.svg'),
-				require('../assets/images/payment.svg'),
-				require('../assets/images/tracking.svg'),
-				require('../assets/images/matching.svg'),
+				require('../../assets/images/matching.svg'),
+				require('../../assets/images/analysis.svg'),
+				require('../../assets/images/conversion.svg'),
+				require('../../assets/images/payment.svg'),
+				require('../../assets/images/tracking.svg'),
+				require('../../assets/images/matching.svg'),
 			],
 			matchArr:[
 				'Calculating Ranking ...','Matching.','Matching..','Matching...','Matching.','Success!'
 			],
 			adImgs:[
-				require('../assets/images/AD_1.png'),
-				require('../assets/images/AD_2.png'),
-				require('../assets/images/AD_3.png'),
-				require('../assets/images/AD_4.png'),
-				require('../assets/images/AD_5.png'),
-				require('../assets/images/AD_1.png')
+				require('../../assets/images/AD_1.png'),
+				require('../../assets/images/AD_2.png'),
+				require('../../assets/images/AD_3.png'),
+				require('../../assets/images/AD_4.png'),
+				require('../../assets/images/AD_5.png'),
+				require('../../assets/images/AD_1.png')
 			],
 			pubImgs:[
-				require('../assets/images/pub_1.png'),
-				require('../assets/images/pub_2.png'),
-				require('../assets/images/pub_3.png'),
-				require('../assets/images/pub_4.png'),
-				require('../assets/images/pub_5.png'),
-				require('../assets/images/pub_1.png')
+				require('../../assets/images/pub_1.png'),
+				require('../../assets/images/pub_2.png'),
+				require('../../assets/images/pub_3.png'),
+				require('../../assets/images/pub_4.png'),
+				require('../../assets/images/pub_5.png'),
+				require('../../assets/images/pub_1.png')
 			],
 			erci:false,
-			isClick:true
+			isClick:true//防止二次点击
 		}
 	},
 	computed:{
 		matchNextIndex(){
 			return this.matchIndex >= 5 ? 0 : this.matchIndex+1
+		},
+		publishImgs(){
+			return this.imgs
 		}
 	},
 	watch:{
@@ -423,7 +401,7 @@ export default{
 				}
 			})
 		},
-		leave2(el,done){
+		leave2(el,done){  //线条2的离开
 			const that = this;
 			function cb(){
 				that.isShowLin3 = true
@@ -443,7 +421,7 @@ export default{
 				cb()
 			} })
 		},
-		enter3(el,done){
+		enter3(el,done){ //线条3的进来
 			const that = this
 			function donecb(){
 				that.isShowAdImg = true
@@ -463,7 +441,7 @@ export default{
 				donecb()
 			}})
 		},
-		matchEnter(el){
+		matchEnter(el){ //中间六边形图案进来动画
 			const that = this;
 			$(el).animate({
 				opacity:1,
@@ -489,7 +467,7 @@ export default{
 				}
 			})
 		},
-		matchLeaveEnter(el){
+		matchLeaveEnter(el){  //中间六边形图案出去动画
 			const that = this
 			$(el).animate({
 				opacity:1
@@ -659,7 +637,7 @@ export default{
 		position: absolute;
 		right:-20px;
 		top: 14px;
-		background-image:url(../assets/images/finger.gif)
+		background-image:url(../../assets/images/finger.gif)
 	}
 	#campaign .first{
 
@@ -756,7 +734,7 @@ export default{
 		border-radius: 4px;
 		left:60px;
 		top:95px;
-		line-height: 31px;
+		line-height: 30px;
 		cursor: pointer;
 	}
 	#campaign .contract-img{
@@ -804,7 +782,7 @@ export default{
 		top: 108px;
 	}
 	#campaign .second .circle{
-		background-image: url(../assets/images/combined_shape.svg);
+		background-image: url(../../assets/images/combined_shape.svg);
 		width: 68px;
 		height: 77px;
 		margin-top: 32px;
@@ -844,7 +822,7 @@ export default{
 	#campaign .second .right i{
 		width: 14px;
 		height: 14px;
-		background-image: url(../assets/images/success.png);
+		background-image: url(../../assets/images/success.png);
 	}
 	#campaign .second .right span{
 		vertical-align: middle;
@@ -1015,7 +993,7 @@ export default{
 	#campaign .second .line1{
 		left:83px;
 		width: 0px;
-		top: -12px;
+		top: -11px;
 		transform: rotate(43deg);
 	}
 	#campaign .second .line2{

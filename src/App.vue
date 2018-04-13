@@ -5,9 +5,6 @@
 </template>
 <script>
 
-
-
-
 export default {
   components:{},
   data(){
@@ -45,17 +42,17 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: inherit;
- 
+  font-weight: inherit; 
+  /*box-sizing: border-box;*/
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
+html,body {
    width: 100%;
-   overflow-x: hidden;
+   /*overflow-x: hidden;*/
 }
 ol, ul {
   list-style: none;
@@ -255,22 +252,13 @@ img,i{
       overflow: auto;
   }
 
+  .w100c{
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+  }
 
 
-  
-  .w100c{margin: 0 auto;width: 1000px;text-align: center;}
- /* .devide-line{
-    position: absolute;
-    width: 100vw;
-    height: 0.5px;
-    background-color: #d8d8d8;
-  }
-  .devide-line-top{
-    top: 0;
-  }
-  .devide-line-btm{
-    bottom: 0;
-  }*/
 
   .mobile-yes{
     display: none;
@@ -280,6 +268,14 @@ img,i{
     text-decoration:underline;
   }
   
+
+  @media screen and (max-width: 1000px) and (min-width: 720px){
+      body,html{
+        width: 1000px;
+      }
+  }
+
+
   @media screen and (max-width: 720px){
     html,body,.w100c{
       width: 100vw;

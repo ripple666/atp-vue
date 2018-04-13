@@ -7,7 +7,7 @@
 			<div class="intro">
 				{{intro}}
 			</div>
-			<img class="chian" src="../assets/images/Group.png" alt="">
+			<img class="chian" src="../../assets/images/Group.png" alt="">
 			<ul class="clearfloat" style="font-size:15px;">
 				<li >
 					<i class="icon-bg" style="margin-right:8px;"></i>
@@ -91,7 +91,7 @@ import $ from 'jquery'
 			margin-bottom:1.8vh;
 		}
 		#atp .intro{
-			color: #8c8c8c;
+			color: #666;
 			font-size:15px;
 			margin-bottom:7.0vh;
 			font-weight: 200;
@@ -100,7 +100,7 @@ import $ from 'jquery'
 			width: 100%;
 			margin-bottom: 22px;
 			margin-top: 7vh;
-			color: #8c8c8c;
+			color: #666;
 			font-weight: 200;
 		}
 		#atp ul>li{
@@ -136,7 +136,7 @@ import $ from 'jquery'
 		}
 		
 		#atp .atp-star{
-			background-image:url(../assets/images/matchstar.png);width:13px;height:13px;
+			background-image:url(../../assets/images/matchstar.png);width:13px;height:13px;
 			width: 14px;
 		    height: 14px;
 		    margin-bottom: 2px;
@@ -144,7 +144,7 @@ import $ from 'jquery'
 		}
 		#atp .bottom{
 			font-size: 15px;
-			color: #8c8c8c;
+			color: #666;
 			line-height: 22px;
 			font-weight: 200;
 		}
@@ -193,7 +193,7 @@ import $ from 'jquery'
 				text-align: right;
 			}
 			#atp .bottom{
-				color:#8c8c8c;
+				color:#666;
 				line-height:18px;
 				font-size:12px;
 				text-align: left;

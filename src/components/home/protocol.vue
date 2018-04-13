@@ -1,20 +1,20 @@
 <template>
 	<div id="protocol">
-		<img class="logo-top" src="../assets/images/logo-top.svg" style="" alt="">
-		<router-link :to="{path:en?'cn':'index'}" class="nav-cn">
+		<img class="logo-top" src="../../assets/images/logo-top.svg" style="" alt="">
+		<router-link :to="{path:en?'cn':'en'}" class="nav-cn">
 			{{en?'CN':'EN'}}
 		</router-link>
 		<div class="w100c">
 			<div class="title">{{en?'Decentralized Token-based Marketing Protocol':'去中心化数字营销协议'}}</div>
 			<div class="logo">
-				<img src="../assets/images/AtlasLogo_VB.svg" alt="">
+				<img src="../../assets/images/AtlasLogo_VB.svg" alt="">
 			</div>
 			<div class="power">	
 				<!-- <span>Powered by</span> -->
 				<img :src="en?powerEnImg:powerCnImg" alt="">
 			</div>
 			<div class="code">
-				<img src="../assets/images/Morse.png" alt="">
+				<img src="../../assets/images/Morse.png" alt="">
 			</div>
 			<div class="bottom">
 				<!-- <span class="whitepaper">Whitepaper</span> -->
@@ -32,8 +32,8 @@
 		},
 		data(){
 			return{
-				powerEnImg:require('../assets/images/powered by.svg'),
-				powerCnImg:require('../assets/images/p1-powered-cn.svg')
+				powerEnImg:require('../../assets/images/powered by.svg'),
+				powerCnImg:require('../../assets/images/p1-powered-cn.svg')
 			}
 		},
 		mounted(){

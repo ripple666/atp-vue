@@ -11,18 +11,17 @@
 	</div>
 </template>
 <script>
-import $ from 'jquery'
 import {validate} from '@/assets/js/validate' //注意路径
 
+import protocol from '@/components/home/protocol'
+import team from '@/components/home/team'
+import chain from '@/components/home/chain'
+import advisors from '@/components/home/advisors'
+import partner from '@/components/home/partner'
+import myFoot from '@/components/home/foot'
+import atp from '@/components/home/atp'
+import campaign from '@/components/home/campaign'
 
-import protocol from '@/components/protocol'
-import team from '@/components/team'
-import chain from '@/components/chain'
-import advisors from '@/components/advisors'
-import partner from '@/components/partner'
-import myFoot from '@/components/foot'
-import atp from '@/components/atp'
-import campaign from '@/components/campaign'
 export	default{
 	components:{
 		team,chain,advisors,partner,myFoot,atp,protocol,campaign

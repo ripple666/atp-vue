@@ -24,34 +24,34 @@
 			return{
 				partners:[
 					{
-						imgurl:require('../assets/images/partner-nebulas.svg'),
+						imgurl:require('../../assets/images/partner-nebulas.svg'),
 						style:{
 							width:'119px'
 						}
 
 					},
 					{
-						imgurl:require('../assets/images/partner-gifto.svg'),
+						imgurl:require('../../assets/images/partner-gifto.svg'),
 						style:{
 							width:'119px'
 						}
 
 					},
 					{
-						imgurl:require('../assets/images/partner-dolphin.svg'),
+						imgurl:require('../../assets/images/partner-dolphin.svg'),
 						style:{
 							width:'119px'
 						}
 
 					},
 					{
-						imgurl:require('../assets/images/partner-token365.svg'),
+						imgurl:require('../../assets/images/partner-token365.svg'),
 						style:{
 							width:'119px'
 						}
 
 					},{
-						imgurl:require('../assets/images/partner-opentoken.svg'),
+						imgurl:require('../../assets/images/partner-opentoken.svg'),
 						style:{
 							width:'125px'
 						}

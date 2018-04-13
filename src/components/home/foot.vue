@@ -1,9 +1,9 @@
 <template>
 	<div id="foot">
-		<img style="position:absolute;top:10px;right:0;width:100vw;" src="../assets/images/bottom-morse-code.svg" alt="">
+		<img style="position:absolute;top:10px;right:0;width:100vw;" src="../../assets/images/bottom-morse-code.svg" alt="">
 		<div class="w100c">
 			<div>
-				<img style="width:225px" src="../assets/images/AtlasLogo_HW.svg"  alt="">
+				<img style="width:225px" src="../../assets/images/AtlasLogo_HW.svg"  alt="">
 			</div>
 			<div class="contact">
 				contact@atlasp.io

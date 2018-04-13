@@ -31,8 +31,8 @@
 		},
 		data(){
 			return{
-				enImgUrl:require('../assets/images/ATP Architecture.svg'),
-				cnImgUrl:require('../assets/images/advisors-example-cn.svg')
+				enImgUrl:require('../../assets/images/ATP Architecture-en.png'),
+				cnImgUrl:require('../../assets/images/ATP Architecture-cn.png')
 			}
 		},
 		mounted(){
@@ -63,6 +63,7 @@
 				text-align:left;
 				letter-spacing: 0.37px;
 				line-height: 21px;
+				font-family:Open Sans;
 				color:#8c8c8c;
 				p{
 					margin-bottom:30px;
